@@ -14,7 +14,7 @@ xpath_of_submit_button = "//div[@class='qsbSubmit']"
 naukari = ScrapingClass(main_homepage_url)
 
 naukari.accessing_url()
-naukari.homepage_input_data('Data Science',xpath_input_box=xpath_for_search_bar,xpath_search_button=xpath_of_submit_button)
+naukari.homepage_input_data('UI/UX',xpath_input_box=xpath_for_search_bar,xpath_search_button=xpath_of_submit_button)
 
 
 
@@ -45,5 +45,6 @@ for salary_range,xpath in salary_filter_dict.items():
     time.sleep(5)
     naukari.reopen_page(filter_page_url)
     time.sleep(5)
-naukari.extracted_data_output(data_name='Data_science_url')
+naukari.extracted_data_output(data_name='UI_UX_url')
 print(len(naukari.data))
+# naukari.data)

@@ -98,12 +98,10 @@ class ScrapingClass:
                 view_more = self.driver.find_element(By.XPATH,view_more_xpath)
                 view_more.click()
                 time.sleep(sleep_time)  
-                print('Hello')
                 self.wait_until_page_get_load(self.wait)
                 check_option = self.driver.find_element(By.XPATH,checkBox)
                 check_option.click()
                 more_submit = self.driver.find_element(By.XPATH,submit_xpath)
-                print('Are')
                 more_submit.click()
                 time.sleep(sleep_time)
             
